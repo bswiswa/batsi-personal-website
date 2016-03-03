@@ -1,1 +1,5 @@
 /* All style should go in this document. */
+
+img {
+    vertical-align: text-top;
+} 
