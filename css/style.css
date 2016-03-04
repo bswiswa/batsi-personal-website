@@ -2,14 +2,47 @@
 
 img {
     vertical-align: text-top;
+    width
 } 
+
+.head {
+	background-color:lightgrey;
+	color:black;
+	text-align: center;
+	border:3px double #848484;
+	width:1500px;
+	
+}
+
+.content {
+	background-color:lavender;
+	color:black;
+	text-align: left;
+	border:3px double #848484;
+	width:1500px;
+
+}
+
+
+#left{ float:left;}
+
+#right{float:right;}
 
 h1 {
 	text-align: center;
+	
 }
 
 h2 {
 	text-align: center;
+	text-decoration: underline;
+	
+}
+
+h3 {
+	text-align: center;
+	text-decoration: underline;
+	
 }
 
 p {
@@ -17,5 +50,9 @@ p {
 }
 
 body {
-	background-color: lightblue;
+	background: #E6E6FA;
+}
+
+head {
+	background: #E0E0E0;
 }
