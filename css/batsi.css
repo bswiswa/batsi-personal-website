@@ -1,0 +1,75 @@
+body {
+	max-width: 100%;
+	margin-right:0 auto;
+	text-align: left;
+	font-size: 18px;
+	background:#d5dbdb;
+}
+
+.content {
+	padding-left: 32%;
+	padding-right: 24%;
+}
+
+.header {
+
+	text-align: center;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border-radius:100%;
+
+}
+
+.row {
+	text-align: left;
+}
+
+.nav ul {
+	width: 100%;
+
+}
+
+.nav li {
+	list-style-type: none;
+	max-width: auto;
+	border: 1px;
+	border-style: double;
+	border-radius: 2px;
+	padding: 5px;
+	font-size: 20px;
+	margin: 3px;
+	display: inline-block;
+	background:#97a7a7;
+}
+
+.nav li a {
+	display:block;
+}
+
+.reference li {
+	list-style-type: none;
+}
+
+
+
+#ref_name_1, #ref_name_2 {
+	font-weight: bold;
+}
+
+#ref_1, #ref_2 {
+	list-style-type: none;
+}
+
+.clicked {
+color: white;
+background:black;
+}
+
+.clicked a {
+	color: white;
+	background: black;
+	border-color: black;
+}
