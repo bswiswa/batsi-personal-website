@@ -1,29 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Batsirai Swiswa</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/"></script>
-    </head>
-    <body style ="background-color: lightblue;">
-    	<img src="OfficialPhoto.jpg" width= "250", height= "300" align="middle">
-    <h1 style="text-align:center;">Batsirai Swiswa</h1>
-    <p style="text-align:center;">149 Winchester Ave, New Haven, CT 06511 <br>
-    	Phone: 1-203-873-7971, Email: bswiswa@gmail.com</p>
+<head>
+	<meta charset="UTF-8">
+	<title> Batsirai Swiswa </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <h2 style="text-align:center;">Education</h2>
-    <p style="text-align:center;"> May 2011 B.S. Chemical Engineering, Yale University, New Haven, CT, USA <br>
-    	2006 Moleli High School, Selous, Zimbabwe</p>
+</head>
 
-    <h2 style="text-align:center;">Experience</h2>
-    <p style="text-align:center;"> Supervisor, Precipio Diagnostics Oct 2015 - Present </p>
-    <h2 style="text-align:center;">Computer Skills</h2>
-    <p style="text-align:center;"> Proficient in Fortran 77, C++, Matlab, Microsoft Word, Excel and Powerpoint <p>
-    <h2 style="text-align:center;">References</h2>
+<body>
+	<div class="header">		
+			<a class="profile_pic" href="#about"> <img src="OfficialPhoto.jpg"> </a>
+			<h2>Batsirai Swiswa</h2>
+			<div class="nav">
+				<ul id="navitem">
+					<li><a href="#about" class="about"> Home </a></li>
+					<li><a href="#education" class="education"> Education </a></li>
+					<li><a href="#experience" class="experience"> Experience </a></li>
+					<li><a href="#skills" class="skills"> Skills </a></li>
+					<li><a href="#reference" class="reference"> Reference </a></li>
+				</ul>
+			</div>
+	</div>
+<div class="content">
+	<div class="details" id ="about">
+		<h3> About Me </h3>
+		<p> I currently live and work in New Haven, CT and I am excited to be a member of the 2016 A100 Winter Cohort! Feel free to reach me at <b>bswiswa@gmail.com </b> or <b> 1-203-873-7971 </b> </p>
+
+	</div>
+
+	<div class="details" id="education"> 
+		<h3> Education </h3>
+		<h4> B.S. Chemical Engineering </h4>
+			<ul>
+				<li> May 2011, Yale University, New Haven, CT, USA</li>
+			</ul>
+
+		<h4>Ordinary and Advanced Level Certificate</h4>
+			<ul>
+				<li> 2000 - 2006, Moleli High School, Selous, Zimbabwe </li>
+			</ul>
+	</div>
+
+	<div class="details" id= "experience">
+		<h3> Experience </h3>
+		<h4> Supervisor, Precipio Diagnostics </h4>
+
+		<ul>
+			<li>Oct 2015 - present</li>
+			<li> Manage personnel in accessioning and flow cytometry departments </li>
+			<li> Work with pathologists to interpret flow cytometry data </li>
+			<li> Oversee inventory record-keeping </li>
+		</ul>
+
+		<h4>Flow Cytometry Technician, Precipio Diagnostics </h4>
+			<ul>
+				<li> Aug 2011 - Oct 2015 </li>
+				<li> Perform all cytometry benchwork, quality control, gating and analysis on peripheral blood, bone marrow and other tissue specimens </li>
+			</ul>
+
+		<h4> Research Assistant </h4>
+			<ul>
+				<li> Firoozabadi Lab: Crude oil asphaltene studies (2011 - 2012)</li>
+				<li> Loewenberg Lab: Produced a computer simulation of drop breakage in high viscosity fluids (2011)</li>
+				<li> Gerstein Lab: Developed C+ programs to test computational models to predict protein motion (Summer 2008)</li>
+			</ul>
+			
+		<h4>English Language Tutor, New Haven Literacy</h4>
+			<ul>
+				<li> Jan 2014 - Jan 2015 </li>
+			</ul>
+		
+	</div>
+
+	<div class="details" id="skills">
+		<h3> Computer Skills </h3>
+		<h4> Proficient in </h4>
+		<ul>
+			<li> C++ </li>
+			<li> Fortran 77 </li>
+			<li> Microsoft Excel, Word and Powerpoint </li>
+		</ul>
+		<h4> Currently learning: </h4>
+		<ul>
+			<li> JavaScript</li>
+			<li> HTML </li>
+			<li> CSS </li>
+			<li> JQuery </li>
+		</ul>
+	</div>
+
+		<div class="details" id = "reference">
+				<h3> References </h3>
+					<ul id="ref_1">
+						<li id="ref_name_1"> Mr. Zaki Sabet </li>
+						<li> VP Technical Operations </li>
+						<li> 4 Science Park, </li>
+						<li> New Haven, CT 06511 </li>
+						<li> zaki.sabet@precipiodx.com </li>
+					</ul>
+
+					<ul id="ref_2">
+						<li id="ref_name_2"> Prof. Michael Loewenberg </li>
+						<li> Yale University Chemical Engineering Dept </li>
+						<li> Mason Laboratory </li>
+						<li> 9 Hillhouse Ave </li>
+						<li> New Haven, CT 06511 </li>
+						<li> michael.loewenberg@yale.edu</li>
+					</ul>
+		</div>
+</div>
+
+<script src="js/batsi.js"></script>
+</body>
 
 
-
-
-    </body>
 </html>
