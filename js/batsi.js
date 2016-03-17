@@ -1,57 +1,33 @@
 $(document).ready(function() {
 	console.log("document ready");
 
+ 	$(".nav-class > a").on("click", function(event) {
+ 		var href = $(this).attr("href");
+ 		var active = $(this).hasClass("clicked");
 
-	$(".about").on("click",function(event) {
-		//console.log("Clicked about"); test
-	$(".nav ul li").removeClass("clicked");
-	$(this).parent().addClass("clicked");
-	$(".details").hide();
-	$("#about").show();
-	event.preventDefault();
-	});
+ 		$(".list-group-item").removeClass("clicked");
+ 		$(".details").hide("slow");
 
-	$(".about").trigger("click");
+ 		if(active == false) {
+ 			console.log("activate");
+			$(this).addClass("clicked");
+			$(href).show("slow");
+		} else {
+			console.log("deactivate");
+		}
 
-	$(".education").on("click", function(event) {
-		$(".nav ul li").removeClass("clicked");
-		$(this).parent().addClass("clicked");
-		$(".details").hide();
-		$("#education").show();
-		event.preventDefault();
-	});
+		event.preventDefault(); //no scrolling
+ 	});
 
+	// equivalent to $(".about").trigger("click");
+	$(".nav-class > a:nth-child(1)").trigger("click");
 
-	$(".experience").on("click", function(event) {
-		$(".nav ul li").removeClass("clicked");
-		$(this).parent().addClass("clicked");
-		$(".details").hide();
-		$("#experience").show();
-		event.preventDefault();
-
-	});
-
-	$(".skills").on("click", function(event) {
-		$(".nav ul li").removeClass("clicked");
-		$(this).addClass("clicked");
-		$(".details").hide();
-		$("#skills").show();
-		event.preventDefault();
-
-	});
-
-	$(".reference").on("click", function(event) {
-		$(".nav ul li").removeClass("clicked");
-		$(this).parent().addClass("clicked");
-		$(".details").hide();
-		$("#reference").show()
-		event.preventDefault();
-
-	});
 
 	$(".profile_pic").on("click", function(event) {
-		$(".about").trigger("click");
-		event.preventDefault();
+		var first_child = $(".nav-class > a:nth-child(1)");
+		if(first_child.hasClass("clicked")) return;
+		first_child.trigger("click");
+		event.preventDefault(); //no scrolling
 	});
 
 
