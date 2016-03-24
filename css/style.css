@@ -54,3 +54,7 @@ background:black;
 	background:lightgrey;
 	border-radius: 5px;
 }
+
+h4 {
+	font-weight: bold;
+}
