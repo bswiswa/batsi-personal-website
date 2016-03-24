@@ -1,4 +1,5 @@
 body {
+	padding-top: 80px;
 	max-width: 100%;
 	font-size: 18px;
 	background:#d5dbdb;
@@ -13,7 +14,13 @@ img {
 
 }
 
-#ref_name_1, #ref_name_2 {
+
+#experience {
+	height: 380px;
+	overflow: scroll;
+}
+
+#ref_name_1, #ref_name_2, h1{
 	font-weight: bold;
 }
 
@@ -35,4 +42,15 @@ background:black;
 	margin-right: 15px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	
+}
+
+.divider {
+    width:5px;
+    display:inline-block;
+}
+
+.col-xs-8 {
+	background:lightgrey;
+	border-radius: 5px;
 }
