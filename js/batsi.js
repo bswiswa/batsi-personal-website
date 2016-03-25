@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	console.log("document ready");
-
+/*
+Andrew: Using href as a variable in Javascript can be misleading
+*/
  	$(".nav-class > a").on("click", function(event) {
  		var href = $(this).attr("href");
  		var active = $(this).hasClass("clicked");
