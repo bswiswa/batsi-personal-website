@@ -20,8 +20,14 @@ img {
 	overflow: scroll;
 }
 
+
 #ref_name_1, #ref_name_2, h1{
 	font-weight: bold;
+}
+
+#ref_1, #ref_2 {
+	margin: 1px;
+	word-wrap: break-word;
 }
 
 #ref_2 {
@@ -55,6 +61,7 @@ background:black;
 	border-radius: 5px;
 }
 
-h4 {
+h1, h4 {
 	font-weight: bold;
+	margin: 1px;
 }
