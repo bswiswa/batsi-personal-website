@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	console.log("document ready");
 
  	$(".nav-class > a").on("click", function(event) {
  		var href = $(this).attr("href");
@@ -9,12 +8,9 @@ $(document).ready(function() {
  		$(".details").hide("slow");
 
  		if(active == false) {
- 			console.log("activate");
 			$(this).addClass("clicked");
 			$(href).show("slow");
-		} else {
-			console.log("deactivate");
-		}
+		} 
 
 		event.preventDefault(); //no scrolling
  	});
